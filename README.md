@@ -3,7 +3,7 @@
 Software engineer with a production Android background, currently focused on
 C++20, Embedded Linux, UAV systems, and computer vision.
 
-## Flagship project
+## What I'm building
 
 ### [CompanionLab](https://github.com/matemink/CompanionLab)
 
