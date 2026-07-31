@@ -22,7 +22,7 @@ hardware work remains propeller-free and observation-only.
 
 ## Current stack
 
-[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,git,githubactions&theme=light)](https://skillicons.dev)
+[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,githubactions&theme=light)](https://skillicons.dev)
 
 ## Production background
 
