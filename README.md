@@ -5,11 +5,11 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 ## What I'm building
 
-### [CompanionLab](https://github.com/matemink/CompanionLab)
+### [OnboardAutonomy](https://github.com/matemink/OnboardAutonomy)
 
-[![CompanionLab CI](https://github.com/matemink/CompanionLab/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/CompanionLab/actions/workflows/ci.yml)
+[![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-A UAV companion-computer testbench built around Raspberry Pi 5 and Pixhawk 6C:
+A C++20 onboard autonomy runtime built around Raspberry Pi 5 and Pixhawk 6C:
 
 - C++20 service with clean domain, application, adapter, and presentation boundaries.
 - MAVLink telemetry and command handling with ArduPilot SITL and real Pixhawk hardware.
@@ -20,11 +20,11 @@ The project is being developed as a reproducible precision-landing system. Real
 flight is not required: autonomous behavior is validated in simulation, while
 hardware work remains propeller-free and observation-only.
 
-### [Emotion Recognition](https://github.com/matemink/emotion-recognition)
+### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
-[![Emotion Recognition CI](https://github.com/matemink/emotion-recognition/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/emotion-recognition/actions/workflows/ci.yml)
+[![ExpressionMesh CI](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml)
 
-A compact computer-vision pipeline from facial landmarks to real-time inference:
+A compact facial-expression classification pipeline from landmarks to real-time inference:
 
 - MediaPipe Face Mesh produces 1,404 features for a scikit-learn Random Forest.
 - Deterministic training, explicit model contracts, and installable Python CLI tools.
