@@ -7,6 +7,8 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 ### [OnboardAutonomy](https://github.com/matemink/OnboardAutonomy)
 
+**Robotics · Computer Vision · Embedded Linux · UAV Autonomy**
+
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
 A C++20 onboard autonomy runtime built around Raspberry Pi 5 and Pixhawk 6C:
@@ -21,6 +23,8 @@ flight is not required: autonomous behavior is validated in simulation, while
 hardware work remains propeller-free and observation-only.
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
+
+**Computer Vision · Machine Learning · Python**
 
 [![ExpressionMesh CI](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml)
 
