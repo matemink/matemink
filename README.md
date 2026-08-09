@@ -34,7 +34,7 @@ and model training to tested real-time inference:
 
 - MediaPipe Face Mesh produces 1,404 features for a scikit-learn Random Forest.
 - Deterministic training, explicit model contracts, and installable Python CLI tools.
-- Unit tests and Python 3.10/3.12 CI, with provenance and limitations in a model card.
+- Automated tests and CI quality gates, with data provenance and limitations documented in a model card.
 
 ## Current stack
 
