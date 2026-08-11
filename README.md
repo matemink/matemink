@@ -29,12 +29,13 @@ propeller-free Raspberry Pi 5 and Pixhawk 6C hardware bench.
 
 [![ExpressionMesh CI](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/ExpressionMesh/actions/workflows/ci.yml)
 
-A reproducible facial-expression recognition pipeline from MediaPipe landmarks
-and model training to tested real-time inference:
+A reproducible end-to-end facial-expression recognition pipeline covering
+synthetic data generation, model training, and live webcam inference:
 
-- MediaPipe Face Mesh produces 1,404 features for a scikit-learn Random Forest.
-- Deterministic training, explicit model contracts, and installable Python CLI tools.
-- Automated tests and CI quality gates, with data provenance and limitations documented in a model card.
+- Stable Diffusion 1.5 generates labeled facial-expression images for the training dataset.
+- MediaPipe Face Mesh extracts 1,404 features used to train a scikit-learn Random Forest.
+- OpenCV runs real-time local inference from a webcam, backed by tested CLI tools and CI quality gates.
+- Data provenance, evaluation results, and model limitations are documented in a model card.
 
 ## Current stack
 
