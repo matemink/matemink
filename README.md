@@ -35,7 +35,7 @@ live predictions:
 - Generates a labeled facial-expression dataset with Stable Diffusion.
 - Trains a scikit-learn classifier on MediaPipe Face Mesh landmarks.
 - Runs real-time local inference from an OpenCV webcam feed.
-- Provides reproducible training, automated tests, CI quality gates, and a model card.
+- Includes reproducible training, automated tests, and CI checks.
 
 ## Current stack
 
