@@ -11,17 +11,14 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-A C++20 companion-computer autonomy runtime for Raspberry Pi 5 and Pixhawk 6C,
-combining MAVLink control, real-time computer vision, safety supervision, and
-reproducible Gazebo validation:
+An onboard autonomy system for Raspberry Pi 5 and Pixhawk 6C that uses camera
+detections to guide an ArduPilot vehicle during precision landing:
 
-- C++20 service with clean domain, application, adapter, and presentation boundaries.
-- MAVLink telemetry and command handling with ArduPilot SITL and real Pixhawk hardware.
-- Raspberry Pi Camera Module 3 pipeline with AprilTag detection and camera calibration.
-- Gazebo-based flight scenarios, fault injection, native tests, and ARM64 CI builds.
-
-Validated end-to-end with ArduCopter SITL and Gazebo, then deployed to a
-propeller-free Raspberry Pi 5 and Pixhawk 6C hardware bench.
+- Detects an AprilTag landing target with Raspberry Pi Camera Module 3.
+- Sends target measurements to ArduPilot over MAVLink while monitoring telemetry and safety state.
+- Runs complete landing and failure scenarios with ArduCopter SITL and Gazebo.
+- Runs on a real Raspberry Pi 5 connected to a real Pixhawk 6C on a propeller-free hardware bench.
+- Built in C++20 with automated tests and CI checks for desktop Linux and ARM64.
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
