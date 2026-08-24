@@ -1,7 +1,7 @@
 # Igor Kostenko
 
-Software engineer with a production Android background, currently focused on
-C++20, Embedded Linux, UAV systems, and computer vision.
+Software engineer with 15+ years of production Android experience, currently
+focused on C++20, Embedded Linux, UAV systems, and computer vision.
 
 ## What I'm building
 
@@ -11,14 +11,22 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-An onboard autonomy system for Raspberry Pi 5 and Pixhawk 6C that uses camera
-detections to guide an ArduPilot vehicle during precision landing:
+A C++20 companion-computer runtime for Raspberry Pi 5 and Pixhawk 6C,
+combining MAVLink, onboard vision, and safety-supervised UAV autonomy:
 
-- Detects an AprilTag landing target with Raspberry Pi Camera Module 3.
-- Sends target measurements to ArduPilot over MAVLink while monitoring telemetry and safety state.
-- Runs complete landing and failure scenarios with ArduCopter SITL and Gazebo.
-- Runs on a real Raspberry Pi 5 connected to a real Pixhawk 6C on a propeller-free hardware bench.
-- Built in C++20 with automated tests and CI checks for desktop Linux and ARM64.
+- Runs operator-selected ArduCopter SITL missions for AprilTag precision
+  landing and forward-camera object detection with bounded yaw tracking.
+- Processes independent landing and forward camera streams with OpenCV,
+  GStreamer, AprilTag, and YOLOX/ONNX.
+- Exercises takeoff, RTL, wind, target loss, link loss, and camera/serial
+  recovery in Gazebo and automated integration tests.
+- Runs the same application on a real Raspberry Pi 5 and Pixhawk 6C bench over
+  USB or TELEM2 UART, with physical motion deliberately safety-gated.
+- Builds and tests on desktop Linux and ARM64 with blocking static analysis.
+
+**Demos:**
+[![Precision landing](https://img.shields.io/badge/YouTube-Precision_Landing-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=rsuRYYDfZZI)
+[![Wind stress test](https://img.shields.io/badge/YouTube-Wind_Stress_Test-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=eqdRw3oofTI)
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
