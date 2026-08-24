@@ -1,7 +1,7 @@
 # Igor Kostenko
 
-Software engineer with 15+ years of production Android experience, currently
-focused on C++20, Embedded Linux, UAV systems, and computer vision.
+Software engineer with a production Android background, currently focused on
+C++20, Embedded Linux, UAV systems, and computer vision.
 
 ## What I'm building
 
