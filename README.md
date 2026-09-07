@@ -40,8 +40,17 @@ live predictions:
 
 ## Current stack
 
-[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,githubactions&theme=light)](https://skillicons.dev)
+[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,fastapi,githubactions&theme=light)](https://skillicons.dev)
 
 ## Production background
 
 [![Production background](https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle&theme=light)](https://skillicons.dev)
+
+## Earlier project
+
+### Goalia
+
+**Kotlin Multiplatform · FastAPI · CatBoost**
+
+A football prediction app with a Kotlin Multiplatform client and a separate
+FastAPI/CatBoost backend. The original KMP client is not currently published.
