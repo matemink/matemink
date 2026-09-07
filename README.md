@@ -59,5 +59,4 @@ A FastAPI backend built for a separate Kotlin Multiplatform football app:
 - Adds home-win, draw, and away-win predictions with a bundled CatBoost model.
 - Exposes enriched match data through a REST endpoint.
 
-This repository contains only the backend. The original KMP client is not
-currently published.
+This repository contains only the backend.
