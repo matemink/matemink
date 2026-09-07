@@ -52,10 +52,12 @@ live predictions:
 
 **Kotlin Multiplatform · FastAPI · CatBoost**
 
-A football prediction project built around a Kotlin Multiplatform client:
+A FastAPI backend built for a separate Kotlin Multiplatform football app:
 
-- Serves match data through a FastAPI backend.
-- Normalizes football team and league names.
-- Adds predictions from a bundled CatBoost model.
+- Fetches scheduled matches from football-data.org and caches the responses.
+- Normalizes team and competition names for consistent model input.
+- Adds home-win, draw, and away-win predictions with a bundled CatBoost model.
+- Exposes enriched match data through a REST endpoint.
 
-The original KMP client is not currently published.
+This repository contains only the backend. The original KMP client is not
+currently published.
