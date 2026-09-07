@@ -46,8 +46,6 @@ live predictions:
 - Runs real-time local inference from an OpenCV webcam feed.
 - Includes reproducible training, automated tests, and CI checks.
 
-## Earlier project
-
 ### [Goalia](https://github.com/matemink/goalia-backend)
 
 **Kotlin Multiplatform · FastAPI · CatBoost**
