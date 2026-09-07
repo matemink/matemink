@@ -48,9 +48,14 @@ live predictions:
 
 ## Earlier project
 
-### Goalia
+### [Goalia](https://github.com/matemink/goalia-backend)
 
 **Kotlin Multiplatform · FastAPI · CatBoost**
 
-A football prediction app with a Kotlin Multiplatform client and a separate
-FastAPI/CatBoost backend. The original KMP client is not currently published.
+A football prediction project built around a Kotlin Multiplatform client:
+
+- Serves match data through a FastAPI backend.
+- Normalizes football team and league names.
+- Adds predictions from a bundled CatBoost model.
+
+The original KMP client is not currently published.
