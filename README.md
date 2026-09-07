@@ -48,6 +48,8 @@ live predictions:
 
 ### [Goalia](https://github.com/matemink/goalia-kmp)
 
+[![Goalia CI](https://github.com/matemink/goalia-kmp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/matemink/goalia-kmp/actions/workflows/ci.yml)
+
 **Kotlin Multiplatform · Compose Multiplatform · FastAPI · CatBoost**
 
 A football prediction app with a shared Android and iOS interface:
