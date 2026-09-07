@@ -46,15 +46,14 @@ live predictions:
 - Runs real-time local inference from an OpenCV webcam feed.
 - Includes reproducible training, automated tests, and CI checks.
 
-### [Goalia](https://github.com/matemink/goalia-backend)
+### [Goalia](https://github.com/matemink/goalia-kmp)
 
-**Kotlin Multiplatform · FastAPI · CatBoost**
+**Kotlin Multiplatform · Compose Multiplatform · FastAPI · CatBoost**
 
-A FastAPI backend built for a separate Kotlin Multiplatform football app:
+A football prediction app with a shared Android and iOS interface:
 
-- Fetches scheduled matches from football-data.org and caches the responses.
-- Normalizes team and competition names for consistent model input.
-- Adds home-win, draw, and away-win predictions with a bundled CatBoost model.
-- Exposes enriched match data through a REST endpoint.
+- Displays fixtures, team crests, and prediction probabilities through a shared Compose UI.
+- Loads and refreshes match data with Ktor and Kotlin Serialization.
+- Uses a FastAPI/CatBoost backend to fetch fixtures and generate match predictions.
 
-This repository contains only the backend.
+**Repositories:** [KMP client](https://github.com/matemink/goalia-kmp) · [Backend](https://github.com/matemink/goalia-backend)
