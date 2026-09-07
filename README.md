@@ -3,6 +3,14 @@
 Software engineer with a production Android background, currently focused on
 C++20, Embedded Linux, UAV systems, and computer vision.
 
+## Current stack
+
+[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,fastapi,githubactions&theme=light)](https://skillicons.dev)
+
+## Production background
+
+[![Production background](https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle&theme=light)](https://skillicons.dev)
+
 ## What I'm building
 
 ### [OnboardAutonomy](https://github.com/matemink/OnboardAutonomy)
@@ -37,14 +45,6 @@ live predictions:
 - Trains a scikit-learn classifier on MediaPipe Face Mesh landmarks.
 - Runs real-time local inference from an OpenCV webcam feed.
 - Includes reproducible training, automated tests, and CI checks.
-
-## Current stack
-
-[![Current stack](https://skillicons.dev/icons?i=cpp,cmake,linux,raspberrypi,py,opencv,fastapi,githubactions&theme=light)](https://skillicons.dev)
-
-## Production background
-
-[![Production background](https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle&theme=light)](https://skillicons.dev)
 
 ## Earlier project
 
