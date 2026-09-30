@@ -19,18 +19,20 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-A C++20 runtime for vision-guided UAV autonomy:
+A C++20 companion-computer runtime for ArduPilot UAVs:
 
-- Simulates multicopter and fixed-wing scenarios in Gazebo.
-- Tracks airborne objects with OpenCV and YOLOX/ONNX.
-- Controls a Pixhawk through MAVLink with safety and recovery handling.
-- Runs on a Raspberry Pi 5 and Pixhawk 6C bench, with Linux and ARM64 CI.
+- Reads MAVLink telemetry over UDP or Linux USB/UART with identity filtering,
+  freshness checks, and automatic reconnect.
+- Captures independent camera streams and processes forward-camera observations
+  with OpenCV and YOLOX/ONNX in simulation.
+- Provides console status, a browser camera preview, and structured JSONL diagnostics.
+- Runs an observation-only Raspberry Pi 5 / Pixhawk 6C bench; automated motion is
+  restricted to explicitly configured SITL.
+- Includes Linux tests, static analysis, recovery checks, and native ARM64 CI.
 
-AprilTag landing remains a validation scenario. Fixed-wing pursuit is in development.
-
-**Demos:**
-[![Precision landing](https://img.shields.io/badge/YouTube-Precision_Landing-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=rsuRYYDfZZI)
-[![Wind stress test](https://img.shields.io/badge/YouTube-Wind_Stress_Test-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=eqdRw3oofTI)
+See the [architecture](https://github.com/matemink/OnboardAutonomy/blob/main/docs/architecture.md)
+and [verified scope](https://github.com/matemink/OnboardAutonomy/blob/main/docs/release-status.md)
+for implementation details and evidence boundaries.
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
