@@ -19,26 +19,12 @@ Kotlin Multiplatform, C++20, Embedded Linux, and computer vision.
 
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-A telemetry and camera observation prototype for ArduPilot, with a
-Raspberry Pi 5 / Pixhawk 6C bench and Gazebo + SITL simulation:
+A C++20 telemetry and camera observation prototype for ArduPilot, with
+Gazebo + SITL simulation and a Raspberry Pi 5 / Pixhawk 6C bench:
 
 - Reads MAVLink over UDP or Linux USB/UART with identity filtering and recovery.
-- Captures independent camera streams and exposes console status, browser preview,
-  and JSONL diagnostics.
-- Checks recovery, package boundaries, static analysis, and native ARM64 builds in CI.
-
-ArduPilot owns flight control. The current companion observes telemetry and
-frames; standalone OpenCV DNN experiments are separate from the demo runtime.
-
-<a href="https://matemink.github.io/OnboardAutonomy/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matemink/OnboardAutonomy/main/docs/diagrams/overview-dark.svg">
-    <img alt="Current OnboardAutonomy prototype: MAVLink and camera inputs, companion runtime, console, HTTP camera preview and JSONL diagnostics." src="https://raw.githubusercontent.com/matemink/OnboardAutonomy/main/docs/diagrams/overview-light.svg" width="840">
-  </picture>
-</a>
-
-[Interactive architecture](https://matemink.github.io/OnboardAutonomy/) ·
-[Current scope and evidence](https://github.com/matemink/OnboardAutonomy#status-and-evidence)
+- Provides independent camera streams, console status, browser preview, and JSONL logs.
+- Includes recovery checks, architecture checks, static analysis, and native ARM64 CI.
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
