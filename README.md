@@ -1,7 +1,7 @@
 # Ihor Kostenko
 
 Software engineer with a production Android background, currently focused on
-C++20, Embedded Linux, UAV systems, and computer vision.
+Kotlin Multiplatform, C++20, Embedded Linux, and computer vision.
 
 ## Current stack
 
@@ -15,24 +15,30 @@ C++20, Embedded Linux, UAV systems, and computer vision.
 
 ### [OnboardAutonomy](https://github.com/matemink/OnboardAutonomy)
 
-**Robotics · Computer Vision · Embedded Linux · UAV Autonomy**
+**C++20 · MAVLink · Camera Diagnostics · Embedded Linux**
 
 [![OnboardAutonomy CI](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml/badge.svg)](https://github.com/matemink/OnboardAutonomy/actions/workflows/ci.yml)
 
-A C++20 companion-computer runtime for ArduPilot UAVs:
+A telemetry and camera observation prototype for ArduPilot, with a
+Raspberry Pi 5 / Pixhawk 6C bench and Gazebo + SITL simulation:
 
-- Reads MAVLink telemetry over UDP or Linux USB/UART with identity filtering,
-  freshness checks, and automatic reconnect.
-- Captures independent camera streams and processes forward-camera observations
-  with OpenCV and YOLOX/ONNX in simulation.
-- Provides console status, a browser camera preview, and structured JSONL diagnostics.
-- Runs an observation-only Raspberry Pi 5 / Pixhawk 6C bench; automated motion is
-  restricted to explicitly configured SITL.
-- Includes Linux tests, static analysis, recovery checks, and native ARM64 CI.
+- Reads MAVLink over UDP or Linux USB/UART with identity filtering and recovery.
+- Captures independent camera streams and exposes console status, browser preview,
+  and JSONL diagnostics.
+- Checks recovery, package boundaries, static analysis, and native ARM64 builds in CI.
 
-See the [architecture](https://github.com/matemink/OnboardAutonomy/blob/main/docs/architecture.md)
-and [verified scope](https://github.com/matemink/OnboardAutonomy/blob/main/docs/release-status.md)
-for implementation details and evidence boundaries.
+ArduPilot owns flight control. The current companion observes telemetry and
+frames; standalone OpenCV DNN experiments are separate from the demo runtime.
+
+<a href="https://matemink.github.io/OnboardAutonomy/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matemink/OnboardAutonomy/main/docs/diagrams/overview-dark.svg">
+    <img alt="Current OnboardAutonomy prototype: MAVLink and camera inputs, companion runtime, console, HTTP camera preview and JSONL diagnostics." src="https://raw.githubusercontent.com/matemink/OnboardAutonomy/main/docs/diagrams/overview-light.svg" width="840">
+  </picture>
+</a>
+
+[Interactive architecture](https://matemink.github.io/OnboardAutonomy/) ·
+[Current scope and evidence](https://github.com/matemink/OnboardAutonomy#status-and-evidence)
 
 ### [ExpressionMesh](https://github.com/matemink/ExpressionMesh)
 
